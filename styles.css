@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-:root{
-  font-family: 'Roboto', sans-serif;
-  --gray: #ededed;
-  --lightblue: #38bdf8;
-  --orange: orange;
-  --gray-text: #8b8b8b;
+:root {
+    font-family: 'Roboto', sans-serif;
+    --gray: #ededed;
+    --lightblue: #38bdf8;
+    --orange: orange;
+    --gray-text: #8b8b8b;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    padding:10px 30px;
+    padding: 10px 30px;
     display: flex;
     align-items: center;
     height: max-content;
@@ -31,7 +31,7 @@ header>input {
     margin-right: 100px;
     flex: 1;
     background-color: var(--gray);
-    border:none;
+    border: none;
     border-radius: 15px;
 }
 
@@ -47,23 +47,23 @@ nav {
 }
 
 nav button {
-  background-color: var(--lightblue);
-  border: none;
-  height:35px;
-  width:90px;
-  color: white;
-  font-weight: bold;
-  margin: 10px;
-  border-radius:17px;
+    background-color: var(--lightblue);
+    border: none;
+    height: 35px;
+    width: 90px;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 17px;
 }
 
-nav span{
-  flex:1;
+nav span {
+    flex: 1;
 }
 
-.salute{
-  font-weight:bold;
-  margin:0;
+.salute {
+    font-weight: bold;
+    margin: 0;
 }
 
 .sidebar {
@@ -75,33 +75,33 @@ nav span{
     color: white;
 }
 
-.sidebar img:not(.logo){
+.sidebar img:not(.logo) {
     margin: 0px 12px;
     filter: invert(1);
 }
 
-.sidebar p{
+.sidebar p {
     font-weight: bold;
 }
 
-.sidebar-title{
+.sidebar-title {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.logo{
-    width:100%;
-    height:50px;
+.logo {
+    width: 100%;
+    height: 50px;
     width: 50px;
     filter: invert(1);
 }
 
-.sidebar>div{
-  margin-top:25px;
+.sidebar>div {
+    margin-top: 25px;
 }
 
-.sidebar>div>div{
+.sidebar>div>div {
     display: flex;
     align-items: center;
 }
@@ -109,17 +109,20 @@ nav span{
 .content {
     background-color: var(--gray);
     display: grid;
-    padding:15px;
+    padding: 15px;
     gap: 15px;
     grid-area: content;
     grid-template-rows: auto auto;
     grid-template-columns: 2fr 1fr;
     grid-template-areas: "cards announcements"
         "cards trending";
+    -webkit-box-shadow: inset 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
-.content>div>p{
-  font-weight:bold;
+.content>div>p {
+    font-weight: bold;
 }
 
 .projects {
@@ -127,24 +130,24 @@ nav span{
     grid-template-rows: auto repeat(3, 1fr);
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "title title"
-      "card card"
-      "card card"
-      "card card";
+        "title title"
+        "card card"
+        "card card"
+        "card card";
     gap: 15px;
     grid-area: cards;
 }
 
-.projects>p{
-    margin-bottom:1px;
-    margin-left:10px;
+.projects>p {
+    margin-bottom: 1px;
+    margin-left: 10px;
 }
 
-.content-title{
-    grid-area:title;
+.content-title {
+    grid-area: title;
 }
 
-.card{
+.card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: max-content 160px 50px;
@@ -156,21 +159,24 @@ nav span{
     background-color: white;
     border-radius: 10px;
     border-left: 5px solid var(--orange);
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 .card .title {
     margin-bottom: 0px;
     font-weight: bold;
     text-align: left;
-    grid-area:title;
+    grid-area: title;
 }
 
-.card p{
-    grid-area:text;
+.card p {
+    grid-area: text;
 }
 
-.card div{
-    grid-area:icons;
+.card div {
+    grid-area: icons;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -179,25 +185,28 @@ nav span{
 
 .announcements {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     background-color: var(--gray);
-    grid-area:announcements;
+    grid-area: announcements;
 }
 
 .announcements>div {
     box-sizing: border-box;
     background-color: white;
     padding: 10px 40px;
-    border-radius:10px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 .announcements>div>div:not(:first-child) {
-    border-top:1px solid gray;
+    border-top: 1px solid gray;
 }
 
-.announcements>div>div>p:first-child{
+.announcements>div>div>p:first-child {
     font-weight: bold;
 }
 
@@ -208,50 +217,56 @@ nav span{
     grid-area: trending;
 }
 
-.trending>div{
-    display:flex;
+.trending>div {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     box-sizing: border-box;
     background-color: white;
     padding: 10px;
-    border-radius:10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
 }
-.users{
-    display:flex;
+
+.users {
+    display: flex;
     align-items: center;
     margin: 0;
 }
 
-.trending span>p{
-  margin:0;
+.trending span>p {
+    margin: 0;
 }
 
-.trending img{
+.trending img {
     margin: 20px;
 }
 
-.announcements>div>div>p:nth-child(2), .trending>div>div>span>p:nth-child(2), .card>p:nth-child(2){
-  color: var(--gray-text);
+.announcements>div>div>p:nth-child(2),
+.trending>div>div>span>p:nth-child(2),
+.card>p:nth-child(2) {
+    color: var(--gray-text);
 }
 
-.icon{
-      box-sizing: border-box;
+.icon {
+    box-sizing: border-box;
     margin: 5px;
     height: 40px;
     width: 40px;
 }
 
-.icon-small{
+.icon-small {
     box-sizing: border-box;
     margin: 5px;
     height: 25px;
     width: 25px;
 }
 
-.icon-large{
+.icon-large {
     box-sizing: border-box;
-    margin:10px;
+    margin: 10px;
     height: 50px;
     width: 50px;
 }
